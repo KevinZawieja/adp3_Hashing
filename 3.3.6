@@ -1,0 +1,8 @@
+Die Komplexität der Operation enthaeltWort(String) hängt von der Implementierung des Hash-Wortschatzes ab.
+Im Allgemeinen beträgt die Komplexität im günstigsten Fall O(1) und im ungünstigsten Fall O(n), wobei n die Anzahl der Wörter im Wortschatz ist.
+
+Im günstigsten Fall, wenn es keine Kollisionen in der Hash-Tabelle gibt, kann das gesuchte Wort direkt an der berechneten Position gefunden werden.
+ Dies erfordert nur einen konstanten Zeitaufwand, unabhängig von der Größe des Wortschatzes.
+
+Im ungünstigsten Fall, wenn es viele Kollisionen gibt und alle Wörter in derselben Überlaufkette landen, muss die gesamte Kette durchsucht werden, um das gesuchte Wort zu finden.
+ Dies erfordert einen linearen Zeitaufwand, da alle Elemente in der Kette überprüft werden müssen.

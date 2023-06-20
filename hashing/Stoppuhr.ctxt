@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Stoppuhr
+comment0.text=\r\n\ Eine\ Stoppuhr\ vereinfacht\ das\ Messen\ von\ Zeitabschnitten.\r\n\ \r\n\ @author\ Fredrik\ Winkler\r\n\ @version\ 2023\r\n
+comment1.params=out\ beschreibung
+comment1.target=Stoppuhr(java.io.PrintStream,\ java.lang.String)
+comment1.text=\r\n\ Startet\ den\ ersten\ Messvorgang.\r\n\ @param\ out\ ein\ PrintStream,\ \u00FCber\ den\ die\ Messdaten\ ausgegeben\ werden\ sollen\r\n\ @param\ beschreibung\ eine\ Beschreibung\ des\ gemessenen\ Vorgangs\r\n
+comment2.params=
+comment2.target=void\ stopp()
+comment2.text=\r\n\ Stoppt\ den\ Messvorgang\ und\ startet\ einen\ neuen.\r\n
+numComments=3

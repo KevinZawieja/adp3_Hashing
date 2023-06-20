@@ -1,0 +1,32 @@
+Bucket 0:   [ (key1, value1), (key2, value2), ... ]
+Bucket 1:   [ (key3, value3), ... ]
+Bucket 2:   [ (key4, value4), ... ]
+...
+Bucket N-1: [ (keyN, valueN), ... ]
+
+Beim Einfügen eines Schlüssel-Wert-Paares wird der Hash-Wert des Schlüssels berechnet und verwendet, um den entsprechenden Bucket zu ermitteln.
+Das Schlüssel-Wert-Paar wird dann am Ende der Liste in diesem Bucket hinzugefügt.
+Wenn der Bucket bereits Schlüssel-Wert-Paare enthält, wird das neue Paar einfach an das Ende der Liste angehängt.
+Dadurch entsteht eine Verkettung von Elementen im Bucket, daher der Name "lineare Verkettung".
+
+Bei der Suche nach einem Schlüssel wird der Hash-Wert des Schlüssels berechnet und der entsprechende Bucket überprüft.
+Die Liste in diesem Bucket wird durchsucht, um das passende Schlüssel-Wert-Paar zu finden.
+Durch die Verkettung innerhalb des Buckets wird der Zugriff auf die Elemente mit Hilfe der Hash-Werte beschleunigt.
+
+
+Vorteile der linearen Verkettung:
+
+Einfache Implementierung: Die Implementierung einer Hash-Tabelle mit linearer Verkettung ist vergleichsweise einfach, da sie lediglich ein Array und Listen benötigt.
+Flexibilität bei der Speicherung: Die lineare Verkettung ermöglicht die Speicherung einer beliebigen Anzahl von Schlüssel-Wert-Paaren, ohne die Größe der Hash-Tabelle zu ändern.
+Effiziente Suche: Die Suche nach einem Schlüssel in einem Bucket ist effizient, da sie in der Regel in konstanter Zeit (O(1)) erfolgt, wenn die Anzahl der Elemente pro Bucket klein ist.
+
+
+Nachteile der linearen Verkettung:
+
+Speicherplatzbedarf: Die lineare Verkettung kann zu einem erhöhten Speicherplatzbedarf führen, da für jeden Bucket eine separate Liste gehalten werden muss, auch wenn sie nur wenige Elemente enthält.
+Langsamer bei voller Auslastung: Wenn die Hash-Tabelle stark ausgelastet ist und viele Schlüssel-Wert-Paare in einem Bucket vorhanden sind, kann die Suche langsamer werden, da die gesamte Liste durchlaufen werden muss.
+Keine natürliche Ordnung: Im Gegensatz zu einer Baum-Implementation bietet die lineare Verkettung keine natürliche Ordnung der Schlüssel-Wert-Paare.
+Wenn eine sortierte Reihenfolge erforderlich ist, müsste eine zusätzliche Sortierung durchgeführt werden.
+Zusammenfassend bietet die lineare Verkettung in einer Hash-Tabelle eine einfache Implementierung, Flexibilität bei der Speicherung und effiziente Suche.
+Jedoch kann sie zu einem erhöhten Speicherplatzbedarf führen und die Suche kann langsamer werden, wenn die Tabelle stark ausgelastet ist.
+Im Vergleich zur Baum-Implementation fehlt jedoch die natürliche Ordnung der Elemente.

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Wortschatz
+comment0.text=\r\n\ Ein\ Wortschatz\ ist\ eine\ Menge\ von\ W\u00F6rtern.\ Dieses\ Interface\ definiert\r\n\ geeignete\ Operationen\ auf\ einer\ solchen\ Menge\:\r\n\ Es\ k\u00F6nnen\ W\u00F6rter\ hinzugef\u00FCgt\ und\ entfernt\ werden,\ es\ kann\ abgefragt\ werden,\r\n\ ob\ ein\ bestimmtes\ Wort\ im\ Wortschatz\ enthalten\ ist,\ und\ es\ kann\ die\ Anzahl\r\n\ der\ gespeicherten\ W\u00F6rter\ abgefragt\ werden.\r\n\ \r\n\ @author\ Fredrik\ Winkler,\ Petra\ Becker-Pechau,\ Axel\ Schmolitzky\r\n\ @version\ 2023\r\n
+comment1.params=wort
+comment1.target=void\ fuegeWortHinzu(java.lang.String)
+comment1.text=\r\n\ F\u00FCge\ ein\ Wort\ zum\ Wortschatz\ hinzu,\ sofern\ es\ noch\ nicht\ enthalten\ ist.\r\n\ \r\n\ @param\ wort\ das\ hinzuzuf\u00FCgende\ Wort\r\n
+comment2.params=wort
+comment2.target=void\ entferneWort(java.lang.String)
+comment2.text=\r\n\ Entferne\ ein\ Wort\ aus\ dem\ Wortschatz,\ sofern\ es\ darin\ enthalten\ ist.\r\n\ \r\n\ @param\ wort\ das\ zu\ entfernende\ Wort\r\n
+comment3.params=wort
+comment3.target=boolean\ enthaeltWort(java.lang.String)
+comment3.text=\r\n\ Gib\ an,\ ob\ ein\ Wort\ im\ Wortschatz\ enthalten\ ist.\r\n\ \r\n\ @param\ wort\ das\ zu\ \u00FCberpr\u00FCfende\ Wort\r\n\ @return\ true,\ falls\ das\ Wort\ enthalten\ ist,\ false\ sonst\r\n
+comment4.params=
+comment4.target=int\ anzahlWoerter()
+comment4.text=\r\n\ Gib\ an,\ wieviele\ W\u00F6rter\ im\ Wortschatz\ enthalten\ sind.\r\n\ \r\n\ @return\ die\ Anzahl\ der\ W\u00F6rter\ im\ Wortschatz\r\n
+numComments=5
